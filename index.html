@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>APEX MOTORS — 360°</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="brand-mark">A</span><span>APEX</span><b>MOTORS</b></div>
+    <nav class="brands">
+      <button class="brand-tab active" data-brand="BMW">BMW</button>
+      <button class="brand-tab" data-brand="Mercedes">Mercedes</button>
+      <button class="brand-tab" data-brand="Porsche">Porsche</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <div class="eyebrow">КОЛЛЕКЦИЯ 2026</div>
+        <h1 id="brandTitle">BMW</h1>
+      </div>
+      <div class="count" id="modelCount">5 моделей в салоне</div>
+    </section>
+
+    <section class="cars" id="cars"></section>
+  </main>
+
+  <div class="modal hidden" id="modal">
+    <div class="backdrop" id="closeBackdrop"></div>
+    <div class="modal-card">
+      <button class="close" id="closeModal">×</button>
+      <div class="viewer">
+        <div class="viewer-top">
+          <span>360° ОБЗОР</span>
+          <span id="angleText">0°</span>
+        </div>
+        <div class="stage" id="stage">
+          <canvas id="glc"></canvas>
+          <div class="drag-hint">← перетаскивай мышью / пальцем →</div>
+        </div>
+        <div class="viewer-controls">
+          <button id="rotateLeft">↶</button>
+          <button id="autoRotate">Авто 360°</button>
+          <button id="rotateRight">↷</button>
+        </div>
+      </div>
+
+      <div class="details">
+        <div class="eyebrow" id="modalBrand">BMW · 2026</div>
+        <h2 id="modalTitle">BMW M8 Competition Coupe</h2>
+        <div class="price" id="modalPrice">$185,000</div>
+        <p id="modalDescription"></p>
+        <div class="stock" id="modalStock"></div>
+        <div class="color-label">Цвет: <strong id="colorName">Obsidian Black</strong></div>
+        <div class="swatches" id="swatches"></div>
+        <button class="order" id="orderBtn">Заказать</button>
+      </div>
+    </div>
+  </div>
+
+  <p class="credits">3D-модели: Mercedes-AMG G 63 — hoanghuycptqt (GitHub, некоммерческое/учебное использование) · Mercedes-Benz C63 AMG (2008) и Porsche 911 Turbo S (992) — Ddiaz Design (Sketchfab), CC BY-NC-SA 4.0 · Mercedes-AMG SL 63 — автор в источнике не указан · BMW X6M Competition — vecarz, CC BY 4.0 · BMW M8 Coupe и BMW M5 — Outlaw Games, CC BY-NC 4.0 · Porsche 911 (930) Turbo — Karol Miklas, CC BY 4.0. Всё некоммерческое, учебный проект.</p>
+  <div class="toast" id="toast">Заявка принята</div>
+  <script src="three-bundle.js"></script>
+  <script src="glb-data.js"></script>
+  <script src="models.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

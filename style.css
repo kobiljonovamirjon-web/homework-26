@@ -1,0 +1,42 @@
+*{box-sizing:border-box}
+:root{font-family:Inter,Arial,sans-serif;color:#fff;background:#090912}
+body{margin:0;min-height:100vh;background:
+radial-gradient(circle at 15% 25%,rgba(104,48,225,.34),transparent 28%),
+radial-gradient(circle at 90% 72%,rgba(38,63,190,.32),transparent 30%),
+linear-gradient(120deg,#090812,#10101b 55%,#0b0c17);overflow-x:hidden}
+button{font:inherit;color:inherit;border:0;cursor:pointer}
+.topbar{height:80px;margin:30px 38px 0;padding:0 14px 0 28px;border:1px solid rgba(255,255,255,.14);border-radius:22px;background:rgba(27,27,38,.78);backdrop-filter:blur(18px);display:flex;align-items:center;justify-content:space-between;box-shadow:0 0 30px rgba(102,53,255,.1)}
+.brand{display:flex;align-items:center;gap:10px;font-size:23px;font-weight:900;letter-spacing:1px}.brand b{color:#777784}.brand-mark{width:36px;height:36px;border-radius:11px;display:grid;place-items:center;background:linear-gradient(135deg,#813cff,#4f35e8);box-shadow:0 0 25px #6337ff;color:#fff}
+.brands{display:flex;gap:8px;padding:6px;border-radius:15px;background:#252530}.brand-tab{padding:12px 25px;border-radius:12px;background:#44444e;color:#ccc;border:1px solid rgba(255,255,255,.08)}.brand-tab.active{background:linear-gradient(135deg,#7440ef,#5c43e7);color:white;box-shadow:0 0 25px rgba(111,65,255,.6)}
+main{padding:55px 7% 80px}.hero{display:flex;justify-content:space-between;align-items:end;margin-bottom:28px}.eyebrow{font-size:13px;letter-spacing:4px;color:#9b7cfb;font-weight:700}h1{font-size:48px;margin:12px 0 0}.count{color:#858593;margin-bottom:9px}
+.cars{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
+.card{background:linear-gradient(145deg,rgba(34,34,47,.92),rgba(25,25,37,.94));border:1px solid rgba(255,255,255,.13);border-radius:20px;padding:14px;min-height:385px;transition:.25s;box-shadow:0 15px 50px rgba(0,0,0,.2)}.card:hover{transform:translateY(-5px);border-color:#7950ff;box-shadow:0 15px 60px rgba(100,55,255,.2)}
+.card.featured{border-color:#744cff;box-shadow:0 0 28px rgba(111,61,255,.35)}
+.car-image{height:220px;border-radius:14px;position:relative;overflow:hidden;background:radial-gradient(circle at 50% 40%,rgba(100,66,190,.55),transparent 55%),linear-gradient(145deg,#3b3a49,#20202d);display:grid;place-items:center}
+.car-svg{width:88%;filter:drop-shadow(0 22px 18px rgba(0,0,0,.65))}
+.stock-badge{position:absolute;right:12px;top:12px;border:1px solid #b96b24;color:#ffc177;background:rgba(46,25,15,.55);padding:7px 11px;border-radius:18px;font-size:12px}
+.card h3{font-size:19px;margin:18px 6px 5px}.spec{color:#888897;font-size:14px;margin:0 6px}.bottom{display:flex;justify-content:space-between;align-items:center;margin:22px 6px 4px}.price{font-size:30px;font-weight:900}.small-btn,.order{background:linear-gradient(135deg,#7a3df0,#5d46e9);box-shadow:0 8px 25px rgba(105,59,245,.4);padding:13px 22px;border-radius:12px;font-weight:800}.small-btn{font-size:14px}
+.modal.hidden{display:none}.modal{position:fixed;inset:0;z-index:10;display:grid;place-items:center}.backdrop{position:absolute;inset:0;background:rgba(5,5,12,.75);backdrop-filter:blur(10px)}
+.modal-card{position:relative;z-index:2;width:min(900px,92vw);display:grid;grid-template-columns:1.08fr .92fr;background:linear-gradient(145deg,#27263a,#202248);border:1px solid rgba(255,255,255,.25);border-radius:26px;overflow:hidden;box-shadow:0 30px 100px rgba(0,0,0,.6)}
+.close{position:absolute;right:16px;top:16px;width:40px;height:40px;border-radius:12px;background:#55545e;font-size:25px;z-index:4}.viewer{padding:16px;background:linear-gradient(145deg,#3b2c66,#2d2850)}.viewer-top{display:flex;justify-content:space-between;font-size:12px;color:#b79cff;letter-spacing:2px;padding:8px 10px}.stage{height:430px;position:relative;display:grid;place-items:center;overflow:hidden;perspective:900px}.car-shadow{position:absolute;width:65%;height:50px;border-radius:50%;background:rgba(0,0,0,.55);filter:blur(18px);bottom:95px}.car3d{width:380px;height:220px;transform-style:preserve-3d;transition:transform .12s linear;position:relative}.car-body{position:absolute;inset:45px 10px 35px;background:linear-gradient(180deg,#202126,#090a0d 72%);border:3px solid #4b4e55;border-radius:32px 28px 20px 18px;box-shadow:inset 0 10px 20px rgba(255,255,255,.08),0 15px 30px #000;transform:rotateX(5deg)}.roof{position:absolute;left:95px;top:-62px;width:190px;height:100px;border-radius:65px 65px 15px 15px;background:#17181c;border:3px solid #4b4e55;transform:skewX(-5deg)}.window{position:absolute;top:-42px;height:55px;background:linear-gradient(135deg,#202e42,#05070b);border:2px solid #5a5d64}.window.front{left:108px;width:80px;transform:skewX(-16deg)}.window.rear{left:191px;width:73px;transform:skewX(12deg)}.hood{position:absolute;right:-12px;top:30px;width:115px;height:82px;background:linear-gradient(180deg,#26272c,#101114);border-radius:12px}.grille{position:absolute;right:-14px;top:55px;width:18px;height:54px;border-radius:5px;background:repeating-linear-gradient(0deg,#555 0 3px,#090909 3px 7px)}.headlight{position:absolute;right:18px;top:25px;width:30px;height:13px;background:#bfe9ff;box-shadow:0 0 18px #bfe9ff;border-radius:8px}.headlight.left{left:18px}.headlight.right{right:18px}.wheel{position:absolute;width:54px;height:54px;border-radius:50%;background:radial-gradient(circle,#777 0 15%,#161616 17% 45%,#050505 47%);bottom:-27px;border:5px solid #090909}.w1{left:52px}.w2{right:52px}.w3,.w4{opacity:0}.drag-hint{position:absolute;bottom:20px;color:#aaa;font-size:12px}.viewer-controls{display:flex;gap:10px}.viewer-controls button{flex:1;padding:12px;border-radius:11px;background:#ffffff12;border:1px solid #ffffff18}.details{padding:50px 34px 30px}.details h2{font-size:36px;line-height:1.02;margin:14px 0}.details>.price{margin:8px 0 24px}.details p{color:#92919f;line-height:1.65}.stock{margin:20px 0;color:#58e7a7}.stock:before{content:"";display:inline-block;width:9px;height:9px;border-radius:50%;background:#36e39b;box-shadow:0 0 12px #36e39b;margin-right:9px}.color-label{color:#858493;margin:25px 0 10px}.color-label strong{color:#fff}.swatches{display:flex;gap:14px;margin-bottom:18px}.swatch{width:38px;height:38px;border-radius:50%;border:2px solid transparent;box-shadow:inset 0 0 0 2px rgba(255,255,255,.12)}.swatch.active{border-color:#fff;box-shadow:0 0 0 2px #744cff}.order{width:100%;font-size:17px}
+.toast{position:fixed;right:25px;bottom:25px;background:#292638;border:1px solid #7654ff;padding:15px 22px;border-radius:12px;transform:translateY(100px);opacity:0;transition:.3s;z-index:20}.toast.show{transform:none;opacity:1}
+@media(max-width:900px){.cars{grid-template-columns:repeat(2,1fr)}.modal-card{grid-template-columns:1fr}.details{padding-top:25px}.stage{height:340px}}
+@media(max-width:620px){.topbar{margin:12px;height:auto;padding:12px;gap:10px;flex-direction:column}.brands{width:100%}.brand-tab{flex:1;padding:10px 6px}.hero{align-items:start;gap:15px;flex-direction:column}h1{font-size:36px}.cars{grid-template-columns:1fr}main{padding:35px 5%}.modal-card{max-height:92vh;overflow:auto}.details h2{font-size:30px}}
+
+.real-car-photo{width:100%;height:100%;object-fit:cover;display:block;border-radius:14px;filter:saturate(1.05) contrast(1.04);transition:transform .35s}
+.card .car-image{padding:0;background:#17171e}
+.card .car-image::after{content:"";position:absolute;inset:auto 0 0;height:35%;background:linear-gradient(transparent,rgba(0,0,0,.55));pointer-events:none}
+.modal-car-photo{width:390px;height:270px;object-fit:contain;border-radius:18px;filter:drop-shadow(0 25px 25px rgba(0,0,0,.7));user-select:none;-webkit-user-drag:none}
+
+/* --- настоящие 3D-модели (WebGL / three.js) --- */
+.stage{perspective:none;cursor:grab;touch-action:none}.stage:active{cursor:grabbing}
+#glc{position:absolute;inset:0;width:100%;height:100%;display:block}
+.drag-hint{z-index:2;pointer-events:none}
+.card .car-image img{width:100%;height:100%;object-fit:contain;border-radius:0;filter:none;transition:transform .35s}
+.card:hover .car-image img{transform:scale(1.05)}
+.card .car-image::after{display:none}
+.card .car-image{background:radial-gradient(circle at 50% 45%,rgba(110,74,200,.5),transparent 60%),linear-gradient(145deg,#3b3a49,#20202d)}
+
+.credits{margin:0;padding:0 7% 30px;color:#5d5c6c;font-size:12px}
+
+.simple-badge{position:absolute;left:12px;bottom:12px;z-index:2;font-size:11px;color:#c9c3e6;background:rgba(20,18,32,.7);border:1px solid #ffffff22;border-radius:20px;padding:3px 9px}
